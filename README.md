@@ -136,9 +136,12 @@ hub-harbor-ui-759b87c94c-kg7gj              1/1       Running   1          6h   
 ```
 可以使用`kubectl get pod,svc,ingress -o wide | grep harbor
 `查看更多信息,因之前配置了traefik，所以这里使用traefik ingree,这里已经配置成功。
+
 ![](https://s1.51cto.com/images/blog/201901/17/ff8dcd67690edd7e30e612de4b03ab20.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
+
 dns服务器上配置harbor.abcgogo.com的dns，也可以修改本地hosts
 接著可以使用浏览器查看Harbor Web UI,默认登录账号密码：admin/Harbor12345
+
 ![](https://s1.51cto.com/images/blog/201901/17/fd99c81ccc39ac54fab0dd4891b2ccdf.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
 
 ## 开始使用harbor
@@ -246,7 +249,9 @@ The push refers to a repository [harbor.abcgogo.com/aikerlinux/tomcat]
 
 ```
 推送成功后,可以通过web查看
+
 ![](https://s1.51cto.com/images/blog/201901/17/6863beca2266ce046b63c3b9475aac5c.png?x-oss-process=image/watermark,size_16,text_QDUxQ1RP5Y2a5a6i,color_FFFFFF,t_100,g_se,x_10,y_10,shadow_90,type_ZmFuZ3poZW5naGVpdGk=)
+
 从harbor获取image
 
 ```
